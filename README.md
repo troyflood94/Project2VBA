@@ -4,4 +4,6 @@ Troy Flood
 Excel VBA Project 
 5/9/2024
 
-Before getting syntax help, I was texting back and fourth with a friend who is an analyst named Tom Huesser, through that conversation I realized a flag ticker is going to be necessary in order ot get this to behave properly. I also used chatGPT for some of the syntax, but largely I fed it plain english as to what I needed it to do, step by step.   The most difficult part of this was actually getting the first open to subtract by the last close. GPT helped me figure out how to accomplish that.
+Objective: Take a large unfocused data set containing stock ticker information and pull summary information based on the ticker symbol.  We had to get each tickers first open and final close price and create a summary table with one code block.
+Challenge: The most difficult part was registering a ticker change.  This was remedied by creating a flag in the code that would update when it detected a change in the ticker label column.  
+Output: Four quarterly stock reports were automatically generated each containing the symbols initial open price and final close price. 
